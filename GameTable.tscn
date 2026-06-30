@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://dvnst7pc7mov2"]
+
+[ext_resource type="Script" uid="uid://ot1sej3ogxlg" path="res://GameTable.gd" id="1_47f26"]
+
+[node name="GameTable" type="Control" unique_id=1451947054]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_47f26")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1565197063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayersContainer" type="Control" parent="." unique_id=764758997]
+anchors_preset = 0
+offset_left = 59.0
+offset_top = 59.0
+offset_right = 1125.0
+offset_bottom = 615.0
+
+[node name="Player_0_Human" type="Control" parent="PlayersContainer" unique_id=1380084792]
+layout_mode = 1
+anchor_right = 0.083000004
+anchor_bottom = 0.072000004
+offset_left = 452.0
+offset_top = 458.0
+offset_right = 541.522
+offset_bottom = 540.968
+
+[node name="Portrait" type="TextureRect" parent="PlayersContainer/Player_0_Human" unique_id=699563178]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="PlayersContainer/Player_0_Human" unique_id=151347244]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ScoreLabel" type="Label" parent="PlayersContainer/Player_0_Human" unique_id=1313849030]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardsHand" type="HBoxContainer" parent="PlayersContainer/Player_0_Human" unique_id=1613723951]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_1_Bot" type="Control" parent="PlayersContainer" unique_id=1801964769]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(6.465402, 4.3003507)
+
+[node name="Portrait" type="TextureRect" parent="PlayersContainer/Player_1_Bot" unique_id=1075369706]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="PlayersContainer/Player_1_Bot" unique_id=743384873]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ScoreLabel" type="Label" parent="PlayersContainer/Player_1_Bot" unique_id=727031457]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardsHand" type="HBoxContainer" parent="PlayersContainer/Player_1_Bot" unique_id=2114833371]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_2_Bot" type="Control" parent="PlayersContainer" unique_id=1232227344]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 76.0
+offset_top = -14.000002
+offset_right = 116.0
+offset_bottom = 25.999998
+grow_horizontal = 2
+scale = Vector2(-3.8718572, 3.7882645)
+
+[node name="Portrait" type="TextureRect" parent="PlayersContainer/Player_2_Bot" unique_id=1303280504]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="PlayersContainer/Player_2_Bot" unique_id=569967505]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ScoreLabel" type="Label" parent="PlayersContainer/Player_2_Bot" unique_id=2116264742]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardsHand" type="HBoxContainer" parent="PlayersContainer/Player_2_Bot" unique_id=31555016]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player_3_Bot" type="Control" parent="PlayersContainer" unique_id=326095576]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -46.0
+offset_top = 54.0
+offset_right = -6.0
+offset_bottom = 94.0
+grow_horizontal = 0
+scale = Vector2(-3.3906746, 7.1512284)
+
+[node name="Portrait" type="TextureRect" parent="PlayersContainer/Player_3_Bot" unique_id=1141190460]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="PlayersContainer/Player_3_Bot" unique_id=1271267783]
+layout_mode = 0
+offset_left = -0.29492655
+offset_top = -0.5593445
+offset_right = 39.705074
+offset_bottom = 22.440655
+
+[node name="ScoreLabel" type="Label" parent="PlayersContainer/Player_3_Bot" unique_id=1519653822]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardsHand" type="HBoxContainer" parent="PlayersContainer/Player_3_Bot" unique_id=933484366]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DeckAnchor" type="Node2D" parent="." unique_id=1545271325]
+position = Vector2(1119, 334)
+
+[node name="TurnTimer" type="Timer" parent="." unique_id=321769147]
+unique_name_in_owner = true
+wait_time = 3.327
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=230343909]
+
+[node name="ActionButtons" type="HBoxContainer" parent="HUD" unique_id=579210757]
+offset_left = 208.0
+offset_top = 355.0
+offset_right = 379.0
+offset_bottom = 453.0
+
+[node name="HitButton" type="Button" parent="HUD/ActionButtons" unique_id=1576336089]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="StandButton" type="Button" parent="HUD/ActionButtons" unique_id=1990333798]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ResultsScreen" type="Control" parent="HUD" unique_id=292842329]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+offset_left = 37.0
+offset_top = 42.0
+offset_right = 1077.0
+offset_bottom = 98.0
+
+[node name="WinnerText" type="Label" parent="HUD/ResultsScreen" unique_id=1384702858]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 1058.0
+offset_bottom = 34.0
+
+[node name="RestartButton" type="Button" parent="HUD/ResultsScreen" unique_id=479477866]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 147.0
+offset_top = 124.0
+offset_right = 917.0
+offset_bottom = 267.0
