@@ -1,10 +1,10 @@
-class_name Card
-extends Resource
+class_name GameCard
+extends Resource # Или оставьте как внутренний класс, если использовали прошлый вариант
 
-# Перечисления для удобства чтения кода
-enum Suit { SPADES, CLUBS, DIAMONDS, HEARTS } # Пики, Крести, Бубны, Черви
+enum Suit { SPADES, CLUBS, DIAMONDS, HEARTS }
 
-@export var suit: Suit
-@export var rank: String # "6", "7", ..., "Jack", "Queen", "King", "Ace"
-@export var value: int   # Сколько очков дает карта (например: Валет = 2, Дама = 3, Король = 4, Туз = 11)
-@export var texture: Texture2D # Сюда художники потом добавят пиксель-арт карты
+var suit: Suit
+var rank: String
+var value: int
+var texture: Texture2D
+var face_up: bool = false # По умолчанию карта лежит рубашкой вверх
