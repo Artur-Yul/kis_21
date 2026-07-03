@@ -134,6 +134,7 @@ func give_card(player_idx: int) -> void:
 	card_sprite.custom_minimum_size = Vector2(80, 120) # Базовый размер на экране
 	card_sprite.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	card_sprite.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	card_sprite.size = Vector2(80, 120)
 	
 	# Назначаем нужную текстуру
 	if card.face_up and card.texture:

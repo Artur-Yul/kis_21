@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dvnst7pc7mov2"]
 
 [ext_resource type="Script" uid="uid://ot1sej3ogxlg" path="res://GameTable.gd" id="1_47f26"]
-[ext_resource type="Texture2D" uid="uid://bt5xoibh4f5bl" path="res://cards/ZoVWYI.png" id="2_qkqhu"]
+[ext_resource type="Texture2D" uid="uid://bt5xoibh4f5bl" path="res://art/cards/ZoVWYI.png" id="2_qkqhu"]
 
 [node name="GameTable" type="Control" unique_id=1451947054]
 layout_mode = 3
@@ -11,6 +11,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_47f26")
+metadata/_edit_horizontal_guides_ = [-92.0]
 
 [node name="Background" type="TextureRect" parent="." unique_id=1565197063]
 layout_mode = 1
@@ -152,7 +153,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="DeckAnchor" type="Node2D" parent="." unique_id=1545271325]
-position = Vector2(1119, 334)
+position = Vector2(1031, 318)
 
 [node name="TurnTimer" type="Timer" parent="." unique_id=321769147]
 unique_name_in_owner = true
